@@ -5,6 +5,8 @@ metadata:
 spec:
   virtualhost:
     fqdn: hello-world-app5.swa-raj.online
+    tls: 
+      secretName: hello-world-app5-tls
   routes:
     - services:
         - name: hello-world-app5
