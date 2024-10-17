@@ -3,12 +3,12 @@ kind: Service
 metadata:
   name: hello-world-app5
 spec:
-  type: NodePort  # Exposes the service on a port on each node
+  type: ClusterIP
   selector:
     app: hello-world-app5
   ports:
   - protocol: TCP
     port: 80
     targetPort: 3004
-    nodePort: 30005  # This is the port that will be opened on the node
+
 
